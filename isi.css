@@ -1,0 +1,176 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFA500;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            vertical-align: middle;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Content Styles */
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Auction Container and Button Styles */
+        .auction-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .auction-details {
+            flex: 1;
+            padding: 20px;
+            background-color: #FFA500;
+            border-radius: 8px;
+        }
+
+        .auction-image {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFA500;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FFA500;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #FFA500;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Daftar Lelang Section */
+        .auction-list-container {
+            background-color: #FFA500;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .auction-item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .auction-item {
+            flex-basis: calc(50% - 20px);
+            padding: 10px;
+            background-color: #474a4a;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .bid-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #FFA500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .bid-button:hover {
+            background-color: #FFA500;
+        }
+
+        .bid-form {
+            margin-top: 10px;
+            display: none;
+        }
+
+        .bid-form label,
+        .bid-form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .bid-list {
+            margin-top: 10px;
+        }
+
+        .bid-list h4,
+        .bid-list ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bid-list ul {
+            list-style: none;
+        }
+
+        .bid-list ul li {
+            margin-bottom: 5px;
+        }

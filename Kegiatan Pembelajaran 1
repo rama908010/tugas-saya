@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Kegiatan Pembelajaran 1</title>
+
+    </head>
+
+    <body>
+        <!--heading-->
+        <h1>mari belajar html</h1>
+        <h2>mari belajar html</h2>
+        <h3>mari belajar html</h3>
+        <h4>mari belajar html</h4>
+        <h5>mari belajar html</h5>
+        <h6>mari belajar html</h6>
+
+        <br>
+        <br>
+        <hr>
+        <h3 align ="center">pembukaan UUD 1945</h3>
+            <p>Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa dan
+                oleh sebab itu, maka penjajahan diatas dunia harus dihapuskan
+                karena tidak sesuai dengan perikemanusiaan dan perikeadilan.
+            </p>
+            <p>Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa dan
+                oleh sebab itu, maka penjajahan diatas dunia harus dihapuskan
+                karena tidak sesuai dengan perikemanusiaan dan perikeadilan.
+            </p>
+            <p>
+                Atas berkat rahmat Allah Yang Maha Kuasa dan dengan didorongkan 
+                oleh keinginan luhur, 
+                supaya berkehidupan kebangsaan yang bebas, 
+                maka rakyat Indonesia menyatakan dengan ini kemerdekaannya.
+            </p>
+    </body>
+</html>

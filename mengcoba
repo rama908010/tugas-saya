@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Situs Web Saya</title>
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di Situs Web Saya</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Tentang Saya</h2>
+            <p>Halo, nama saya [Nama Anda]. Saya senang belajar HTML!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hak Cipta &copy; 2023. Situs Web Saya.</p>
+    </footer>
+</body>
+</html>

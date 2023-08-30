@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="isi.css">
+    <title>Your Website</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="lomosphere (1).png" alt="Logo" height="70" width="70">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#main_content">Home</a></li>
+                <li><a href="#auction-list">Daftar Lelang</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content" id="main_content">
+        <div class="box">
+            <img src="kegiatan-lelang.jpg" alt="Auction Event" height="400" width="800">
+            <p>
+                "Siap untuk Aksi Tergila di Pelelangan Paling Seru? Bergabunglah Sekarang!"
+                <br>
+
+                "Jangan Hanya Jadi Penonton! Bergabunglah dan Jadilah Pemain Utama di Pelelangan Kami!"
+                <br>
+
+                "Penasaran bagaimana rasanya menang dalam persaingan sengit? Daftar dan Bergabunglah!"
+                <br>
+
+                "Catat Tanggalnya! Pelelangan Spektakuler Akan Datang. Jadilah Bagian Dari Itu!"
+                <br>
+
+                "Suara Palu yang Mendebarkan, Penawaran yang Mengguncang! Kamu Sudah Gabung?"
+                <br>
+
+                "Kami Tantang Kamu untuk Mendapatkan Barang Impian dengan Harga Super! Gabung Sekarang!"
+                <br>
+
+                "Bukan Hanya Pelelangan, Ini Petualangan! Ayo Bergabung dan Raih Barang Langka!"
+                <br>
+
+                "Pelelangan: Tempat di Mana Hanya Yang Tercepat dan Terkuat yang Bertahan. Kamu Siap?"
+                <br>
+
+                "Bawa Energi Kamu ke Pelelangan Kami! Penawaran Hebat Hanya untuk Pemberani!"
+                <br>
+
+                "Bergabunglah, Berebutlah, Menanglah! Pelelangan Kami Menanti Pemenang Berikutnya!"
+                <br>
+            </p>
+            <div class="auction-container">
+                <div class="auction-details">
+                    <div class="cta">
+                        <a href="#" class="cta-button">Ikuti Pelelangan</a>
+                    </div>
+                </div>
+                <div class="auction-image">
+                    <img src="5-Auction-pic.jpg" alt="Auction Event" height="400" width="800">
+                </div>
+            </div>
+            <br>
+            <div id="auction-list" class="auction-list-container">
+                <h2>Daftar Lelang</h2>
+                <div class="auction-item-container">
+                    <!-- Auction Item 1 -->
+                    <div class="auction-item">
+                        <img src="Ocean-Shores-1.webp" height="600" width="300">
+                        <h3>Rumah Mewah di Pinggir Pantai</h3>
+                        <p>Kategori: Properti</p>
+                        <p>Harga Awal: $500,000</p>
+                        <button class="bid-button" onclick="toggleBidForm(1)">Ikuti Pelelangan</button>
+                        <div class="bid-form" id="bid-form-1" style="display: none;">
+                            <form onsubmit="submitBid(event, 1)">
+                                <label for="name1">Nama Anda:</label>
+                                <input type="text" id="name1" name="name1" required><br><br>
+                                <label for="bid1">Tawaran Harga:</label>
+                                <input type="number" id="bid1" name="bid1" required><br><br>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <div class="bid-list" id="bid-list-1">
+                            <h4>Daftar Penawar:</h4>
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add more auction items here -->
+                    <!-- Auction Item 2 -->
+                    <!-- Auction Item 3 -->
+                    <!-- ... and so on for 10 items -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        &copy; 2023 by Rama and Zidan M.
+    </footer>
+    <script>
+        function toggleBidForm(itemNumber) {
+            const bidForm = document.getElementById(`bid-form-${itemNumber}`);
+            bidForm.style.display = bidForm.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function submitBid(event, itemNumber) {
+            event.preventDefault();
+            const name = document.getElementById(`name${itemNumber}`).value;
+            const bid = document.getElementById(`bid${itemNumber}`).value;
+            const bidList = document.getElementById(`bid-list-${itemNumber}`);
+            const bidderInfo = document.createElement('li');
+            bidderInfo.textContent = `${name} - ${bid}`;
+            bidList.querySelector('ul').appendChild(bidderInfo);
+        }
+    </script>
+</body>
+
+</html>
